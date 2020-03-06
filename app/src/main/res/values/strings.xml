@@ -9,4 +9,5 @@
     <string name="ondestroy">onDestroy():</string>
     <string name="oncreate">onCreate():</string>
     <string name="onrestart">onRestart():</string>
+    <string name="onstop">onStop():</string>
 </resources>
