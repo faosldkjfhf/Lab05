@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -37,6 +38,17 @@ public class MainActivity extends AppCompatActivity {
         set1.setText("Set 1: " + count);
         Log.i("onCreate", "onCreate");
         editor.apply();
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.putInt("counter", 0);
+                count = 0;
+                set2.setText("Set 2: 0");
+                set1.setText("Set 1: 0");
+                editor.apply();
+            }
+        });
     }
 
     @Override
