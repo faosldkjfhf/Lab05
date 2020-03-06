@@ -2,4 +2,6 @@
     <string name="app_name">Lab05</string>
     <string name="reset">reset</string>
     <string name="hola">Hola</string>
+    <string name="set_1_0">Set 1: 0</string>
+    <string name="set_2_0">Set 2: 0</string>
 </resources>
