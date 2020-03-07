@@ -6,8 +6,11 @@
     <string name="set_2_0">Set 2: 0</string>
     <string name="total">Total</string>
     <string name="current">Current</string>
-    <string name="ondestroy">onDestroy():</string>
-    <string name="oncreate">onCreate():</string>
-    <string name="onrestart">onRestart():</string>
-    <string name="onstop">onStop():</string>
+    <string name="ondestroy">onDestroy(): 0</string>
+    <string name="oncreate">onCreate(): 0</string>
+    <string name="onrestart">onRestart(): 0</string>
+    <string name="onstop">onStop(): 0</string>
+    <string name="onpause">onPause(): 0</string>
+    <string name="onresume">onResume(): 0</string>
+    <string name="onstart">onStart(): 0</string>
 </resources>

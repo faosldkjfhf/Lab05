@@ -11,11 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/current"
-        android:textSize="45sp"
+        android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/set2"/>
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/onCreate1"
         android:layout_width="wrap_content"
@@ -30,7 +29,7 @@
         android:id="@+id/onStart1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/current"
+        android:text="@string/onstart"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -40,7 +39,7 @@
         android:id="@+id/onResume1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/current"
+        android:text="@string/onresume"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -50,7 +49,7 @@
         android:id="@+id/onPause1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/current"
+        android:text="@string/onpause"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -91,11 +90,80 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/total"
-        android:textSize="45sp"
+        android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@id/onDestroy1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button" />
+        app:layout_constraintBottom_toTopOf="@id/onCreate2" />
+    <TextView
+        android:id="@+id/onCreate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oncreate"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/set2"
+        app:layout_constraintBottom_toTopOf="@id/onStart2"/>
+    <TextView
+        android:id="@+id/onStart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onstart"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onCreate2"
+        app:layout_constraintBottom_toTopOf="@id/onResume2"/>
+    <TextView
+        android:id="@+id/onResume2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onresume"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onStart2"
+        app:layout_constraintBottom_toTopOf="@id/onPause2"/>
+    <TextView
+        android:id="@+id/onPause2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onpause"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onResume2"
+        app:layout_constraintBottom_toTopOf="@id/onStop2"/>
+    <TextView
+        android:id="@+id/onStop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onstop"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onPause2"
+        app:layout_constraintBottom_toTopOf="@id/onRestart2"/>
+    <TextView
+        android:id="@+id/onRestart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onrestart"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onStop2"
+        app:layout_constraintBottom_toTopOf="@id/onDestroy2"/>
+    <TextView
+        android:id="@+id/onDestroy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ondestroy"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onRestart2" />
     <Button
         android:id="@+id/button"
         android:text="@string/reset"
@@ -104,6 +172,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/set2"/>
+        app:layout_constraintTop_toBottomOf="@id/onDestroy2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
